@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: url("https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1178&q=80");
+  background-size: cover;
+  text-align: center;
+  transition: filter 0.7s;
+}
+
+h1 {
+  color: wheat;
+  font-size: 60px;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.btn {
+  background-color: #16a34a;
+  color: white;
+  padding: 10px 20px;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  font-size: 20px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background-color: #1ac358;
+  transform: scale(1.1);
+}
+
+.active.container {
+  filter: blur(5px) brightness(80%);
+}
+
+.popup-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: url("https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  transition: all 0.7s;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #16a34a;
+}
+
+.popup-btn {
+  background-color: #16a34a;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 7px;
+  color: white;
+  border: none;
+  width: 180px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.input {
+  border: 2px solid;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.input::placeholder {
+  color: lightgray;
+}
+
+.close-icon {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: #b91c1c;
+  transform: scale(1.2);
+}
+
+.active.popup-container {
+  visibility: hidden;
+  opacity: 0;
+  top: 10%;
+}
+
+.popup-btn:hover {
+  background-color: #1ac358;
+}
