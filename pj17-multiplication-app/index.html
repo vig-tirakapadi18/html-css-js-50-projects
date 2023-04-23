@@ -8,7 +8,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Animated Search Bar</title>
+    <title>Multiplication App</title>
     <link
       rel="stylesheet"
       href="./style.css" />
@@ -17,19 +17,27 @@
       defer></script>
   </head>
   <body>
-    <div class="container active">
-      <img
-        src="https://cdn4.iconfinder.com/data/icons/essentials-72/24/002_-_Search-256.png"
-        alt="search"
-        class="search-icon" />
+    <form
+      class="form"
+      id="form">
+      <h4
+        class="score"
+        id="score">
+        Score : 40
+      </h4>
+      <h1 id="question">What is 1 x 1 ?</h1>
       <input
         type="text"
         class="input"
-        placeholder="Search..." />
-      <img
-        src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-256.png"
-        alt="mic"
-        class="mic-icon" />
-    </div>
+        id="input"
+        placeholder="Enter Your Answer"
+        autofocus
+        autocomplete="off" />
+      <button
+        type="submit"
+        class="btn">
+        Submit
+      </button>
+    </form>
   </body>
 </html>
