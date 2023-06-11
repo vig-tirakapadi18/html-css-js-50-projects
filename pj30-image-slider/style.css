@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #292524;
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.img-container {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  color: whitesmoke;
+  font-size: 20px;
+  transform: translateY(-50%);
+  opacity: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn.arrow-prev {
+  left: 10px;
+}
+
+.btn.arrow-next {
+  right: 10px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
