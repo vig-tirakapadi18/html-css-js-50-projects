@@ -62,6 +62,18 @@ img {
   padding: 2rem 0.5rem;
 }
 
+.content {
+  display: none;
+}
+
+.content.live {
+  display: block;
+}
+
+.btn.live {
+  background: #9db2bf;
+}
+
 @media (min-width: 992px) {
   .image {
     margin-bottom: 0;
