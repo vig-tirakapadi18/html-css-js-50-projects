@@ -1,0 +1,88 @@
+:root {
+    --main-color: #be123c;
+    --white-color: #fff;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("https://cdn.pixabay.com/photo/2020/02/06/15/59/forest-4824759_1280.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+}
+
+.container {
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.6rem);
+    width: 20em;
+    border-radius: 1.5em;
+    padding: 2em;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+h4 {
+    font-size: 2rem;
+    color: var(--white-color);
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 7px;
+    margin-top: 2em;
+}
+
+.btn:disabled {
+    background-color: #a3a3a3;
+    cursor: not-allowed;
+}
+
+.color {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+}
+
+p {
+    background-color: var(--main-color);
+    margin-top: 2em;
+    padding: 6px;
+    color: var(--white-color);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    border-radius: 2px;
+}
+
+.btn:active {
+    opacity: 0.9;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+.color-container {
+    display: none;
+}

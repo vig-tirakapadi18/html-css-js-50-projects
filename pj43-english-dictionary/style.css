@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2013/10/09/02/26/lake-192979_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.4rem);
+    color: aliceblue;
+    padding: 2rem 4rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 30rem;
+    text-align: center;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.container > input {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: inherit;
+    font-family: inherit;
+    font-size: larger;
+    font-weight: 600;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.meaning-container {
+    display: none;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.word {
+    color: springgreen;
+}
+
+.meaning {
+    color: springgreen;
+}

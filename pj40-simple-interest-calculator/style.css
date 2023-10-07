@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2023/09/12/17/59/stones-8249322_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: cursive;
+}
+
+.container {
+    background-color: rgba(6, 78, 59, 0.5);
+    color: white;
+    backdrop-filter: blur(0.6rem);
+    padding: 1.5rem 4rem;
+    border-radius: 1rem;
+    width: 20rem;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.input-title {
+    margin-bottom: 0.3rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.input {
+    width: 20rem;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+    margin-inline: auto;
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-size: 1.2rem;
+}
+
+h1,
+h3 {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: left;
+}
+
+.payment {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit;
+    background-color: #e11d48;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:active {
+    opacity: 0.9;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}

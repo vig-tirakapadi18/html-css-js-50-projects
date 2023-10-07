@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;500;600;700;800;900&family=REM:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "REM", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #0f172a;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 50px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.value {
+  font-size: 6rem;
+}

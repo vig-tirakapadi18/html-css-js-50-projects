@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Mooli&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2023/09/12/17/59/stones-8249322_640.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Mooli;
+    color: white;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.6rem);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+    max-width: 22rem;
+}
+
+h4 {
+    margin: 1rem 0 0.2rem 0;
+    text-align: left;
+}
+
+.input {
+    width: 19rem;
+    height: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 0 0.4rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.input:focus {
+    border: 2px solid chartreuse;
+}
+
+.bmi {
+    height: 2rem;
+    font-size: 20px;
+}
+
+.bmi:focus {
+    border: none;
+}
+
+.btn {
+    width: 19.8rem;
+    height: 2rem;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 600;
+    background-color: rgb(127, 255, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active {
+    filter: brightness(0.9);
+}
+
+.line {
+    width: 12rem;
+    margin-top: 1.5rem;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-inline: auto;
+}
+
+span {
+    color: chartreuse;
+    font-size: 20px;
+}
