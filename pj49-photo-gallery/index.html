@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Photo Gallery</title>
+        <link
+            rel="stylesheet"
+            href="./style.css" />
+        <script
+            src="./script.js"
+            defer></script>
+    </head>
+    <body class="flex">
+        <div class="container">
+            <h1 class="heading">Photo Gallery</h1>
+            <p class="info-text fontWeight">Enter the number of photos</p>
+            <input
+                type="number"
+                class="count-input fontWeight"
+                id="count-input"
+                min="0"
+                max="10" /><br />
+            <p
+                class="error-msg fontWeight"
+                id="error-msg">
+                Please enter number between 0 to 10!
+            </p>
+            <button
+                class="btn fontWeight"
+                id="btn">
+                GET PHOTOS
+            </button>
+            <div
+                class="loader"
+                id="loader">
+                <img
+                    src="./loader.svg"
+                    alt="loader" />
+            </div>
+            <div
+                class="photos-container"
+                id="photos-container"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Mooli&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: Montserrat, Nunito, Mooli, "Courier New", Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2023/09/12/17/59/stones-8249322_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    width: 40%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(0.35rem);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 15%;
+    text-align: center;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.temprature-container {
+    text-align: start;
+    margin: 0.8rem;
+    font-size: 1.6rem;
+}
+
+.temprature-input {
+    width: 20rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-inline: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}

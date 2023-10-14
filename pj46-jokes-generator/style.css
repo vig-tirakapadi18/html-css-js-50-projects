@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Mooli&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: Mooli, Nunito, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/06/05/03/rocks-1239727_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-inline: 20rem;
+    padding: 1.5rem 3rem;
+    background-color: rgba(25, 25, 25, 0.15);
+    backdrop-filter: blur(0.4rem);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7),
+        -5px -5px 10px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.heading {
+    text-transform: uppercase;
+    background-color: rgb(32, 178, 170, 0.6);
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    /* text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3); */
+}
+
+.loader {
+    display: none;
+}
+
+.joke {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.new-joke-btn {
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    text-transform: uppercase;
+    color: lightseagreen;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid;
+    transition: all 0.25s ease-in-out;
+}
+
+.new-joke-btn:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.new-joke-btn:active {
+    opacity: 0.9;
+}
+
+.error {
+    height: 4rem;
+    color: #be123c;
+    cursor: not-allowed;
+}

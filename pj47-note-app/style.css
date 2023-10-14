@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Mooli&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: Mooli, Nunito, "Courier New", Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2021/07/08/14/06/sea-6397001_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    margin: 2rem 4rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.4rem);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.info-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 2rem 4rem;
+    color: #be123c;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 16rem);
+    grid-gap: 2rem;
+    margin-inline: 5rem;
+    justify-content: center;
+}
+
+.note,
+.add-btn {
+    background-color: rgb(255, 255, 255, 0.15);
+    backdrop-filter: blur(0.2rem);
+    padding: 10px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    resize: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6),
+        -3px -3px 10px rgba(0, 0, 0, 0.6);
+    border: 2px solid black;
+    width: 15rem;
+    height: 12rem;
+}
+
+.note {
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+
+.note:hover,
+.note:active,
+.add-btn:hover {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6),
+        -6px -6px 10px rgba(0, 0, 0, 0.6);
+}
+
+textarea::placeholder {
+    color: black;
+    font-weight: 600;
+}
+
+.add-btn {
+    font-size: 5rem;
+    cursor: pointer;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.add-btn:active {
+    transform: scale(0.95);
+}
+
+.delete-icon {
+    width: 1.8rem;
+    vertical-align: middle;
+    margin-inline: 0.6rem;
+}
+
+.add-icon {
+    width: 3rem;
+    opacity: 0.75;
+}

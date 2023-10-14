@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("https://cdn.pixabay.com/photo/2020/03/03/20/31/boat-4899802_1280.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/21/15/43/beach-1846040_1280.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ body {
     width: auto;
     text-align: center;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    max-width: 60%;
+    max-width: 61%;
 }
 
 .heading {

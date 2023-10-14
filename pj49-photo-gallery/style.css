@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Mooli&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: Mooli, Nunito, monospace, "Courier New", Courier, monospace;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontWeight {
+    font-weight: 600;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(
+        to right,
+        chocolate,
+        teal,
+        cornflowerblue
+    );
+
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    margin: auto 10%;
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 2rem;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.45),
+        -6px -6px 10px rgba(0, 0, 0, 0.45);
+    width: 70%;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    background-color: rgb(28, 25, 23, 0.6);
+    padding: 0.75rem;
+    color: white;
+}
+
+.info-text {
+    font-size: 18px;
+}
+
+.count-input {
+    width: 8rem;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: inherit;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn {
+    margin: 1rem;
+    width: 15rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: 3px solid#1c1917;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #1c1917;
+    color: white;
+}
+
+img {
+    margin: 0.5rem;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.45),
+        -3px -3px 6px rgba(0, 0, 0, 0.45);
+}
+
+.error-msg {
+    display: none;
+    font-size: 12px;
+    margin-top: 1.5rem;
+    color: #9f1239;
+}
+
+.error-btn {
+    border: 3px solid #9f1239;
+    cursor: not-allowed;
+    transition: all 0.25s ease-in-out;
+    color: #9f1239;
+}
+
+.error-btn:hover {
+    background-color: #9f1239;
+}
+
+.loader {
+    display: none;
+}
