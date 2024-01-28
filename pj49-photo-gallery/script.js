@@ -19,6 +19,7 @@ const fetchPhotos = async () => {
                 const apiUrl = `https://api.unsplash.com/photos?per_page=${inputVal}&page=${Math.round(Math.random() * 1000)}&client_id=${apiKey}`;
 
                 const result = await fetch(apiUrl).then(resp => resp.json());
+                console.log(result)
 
                 result.forEach(pic => {
                         photos += `
@@ -30,6 +31,7 @@ const fetchPhotos = async () => {
 
                 errorMessageEl.style.display = "none";
                 loaderEl.style.display = "none";
+                photosContainerEl.style.display = "block";
         } catch (error) {
                 console.log(error.message);
                 btn.classList.add("error-btn");

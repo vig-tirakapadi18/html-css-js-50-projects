@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Mooli&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Mooli, Nunito, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --btn-color: #3f51b5;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-weight {
+    font-weight: 500;
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/27/21/03/lone-tree-1934897_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.container {
+    padding: 2rem 0;
+    margin-inline: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.3rem);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 6px rgb(0, 0, 0, 0.3), -3px -3px 6px rgb(0, 0, 0, 0.3);
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin: 1rem 2rem;
+    background-color: rgb(255, 255, 255, 0.5);
+    /* color: white; */
+    padding: 10px;
+}
+
+form {
+    margin: 1rem 10%;
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+}
+
+img {
+    width: 100px;
+    margin-block: 1rem;
+}
+
+.city-input {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 30rem;
+    border: 3px solid var(--btn-color);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    font-size: 20px;
+}
+
+.weather-btn {
+    background-color: var(--btn-color);
+    padding: 10px;
+    border: 3px solid var(--btn-color);
+    border-left: none;
+    outline: none;
+    font-size: 12px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.temperature,
+.weather {
+    color: black;
+}
+
+.temperature {
+    font-size: 3rem;
+}
+
+.weather {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.weather-details {
+    /* display: flex; */
+    margin-inline: 5%;
+    color: white;
+}
+
+.weather-item {
+    padding: 1rem;
+    margin: 10px;
+    background-color: rgb(63, 81, 181, 0.7);
+    border-radius: 10px;
+}
+
+.error {
+    color: #d50000;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin-inline: 5%;
+    }
+
+    .weather-btn {
+        padding: 10px;
+    }
+}
+
+/* https://cdn.pixabay.com/photo/2017/09/11/14/11/fisherman-2739115_1280.jpg */

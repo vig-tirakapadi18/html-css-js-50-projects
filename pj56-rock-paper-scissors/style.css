@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2017/10/10/07/48/beach-2836300_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(38, 50, 56, 0.3);
+    backdrop-filter: blur(0.35rem);
+    padding: 2rem 4rem;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5),
+        -6px -6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+    text-transform: uppercase;
+    background-color: rgb(236, 239, 241, 0.5);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+p {
+    margin: 1rem;
+    color: #eceff1;
+}
+
+.moves-container {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.btn {
+    margin: 1rem;
+    padding: 0.8rem;
+    width: 5.5rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
+}
+
+.rock {
+    background-color: rgba(255, 61, 0);
+}
+
+.paper {
+    background-color: rgba(3, 169, 244);
+}
+
+.scissors {
+    background-color: rgb(0, 230, 118);
+}
+
+.btn:hover {
+    opacity: 0.95;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.my-score,
+.computer-score {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.my-score {
+    color: #00e676;
+}
+
+.computer-score {
+    color: #ff1744;
+}
+
+@media screen and (max-width: 680px) {
+    .container {
+        margin-inline: 10%;
+        padding: 0.5rem;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .moves-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
